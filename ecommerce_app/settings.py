@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'loginapp',
     'crispy_forms',
     'App_Order',
+    'App_Payment',
     
 ]
 
