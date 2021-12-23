@@ -9,6 +9,9 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = "Categories"
+    @property
+    def get_products(self):
+        return Product.objects.filter(category__title= self.title)
 
 class Product(models.Model):
     mainimage = models.ImageField(upload_to='Products')

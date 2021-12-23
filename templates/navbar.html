@@ -6,6 +6,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
+       
+        <li class="nav-item"><a href="{% url 'shop:category' name='Cloths' %}" class="nav-link">Cloths</a></li>
+        <li class="nav-item"><a href="{% url 'shop:category' name='Electronics' %}" class="nav-link">Electrinis</a></li>
+        <li class="nav-item"><a href="{% url 'shop:category' name='mobile' %}" class="nav-link">Mobile</a></li>
+        
+        
         {% if request.user.is_authenticated %}
         <li class="nav-item">
           <a href="{% url 'App_Order:cart' %}" class="nav-link">
